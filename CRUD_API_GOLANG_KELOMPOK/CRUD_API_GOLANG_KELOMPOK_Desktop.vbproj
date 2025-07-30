@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F73229F-A88E-4753-BE37-EDA2F0BAD16A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CRUD_API_GOLANG_KELOMPOK.My.MyApplication</StartupObject>
+    <RootNamespace>CRUD_API_GOLANG_KELOMPOK</RootNamespace>
+    <AssemblyName>CRUD_API_GOLANG_KELOMPOK</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CRUD_API_GOLANG_KELOMPOK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CRUD_API_GOLANG_KELOMPOK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.3\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClient.vb" />
+    <Compile Include="ApiMonitoringClient.vb" />
+    <Compile Include="Api_MenudanTransaksi_Client.vb" />
+    <Compile Include="ClassLoginHistory.vb" />
+    <Compile Include="DetailPesananForm.Designer.vb">
+      <DependentUpon>DetailPesananForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPesananForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer.Designer.vb">
+      <DependentUpon>FormCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.vb" />
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonitoring_dan_laporan.Designer.vb">
+      <DependentUpon>FormMonitoring_dan_laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonitoring_dan_laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksi, Menu, Promo.Designer.vb">
+      <DependentUpon>FormTransaksi, Menu, Promo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksi, Menu, Promo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model.vb" />
+    <Compile Include="Model_DatadanTransaksi.vb" />
+    <Compile Include="Model_Monitoringdata.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RoundedGroupbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DetailPesananForm.resx">
+      <DependentUpon>DetailPesananForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer.resx">
+      <DependentUpon>FormCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonitoring_dan_laporan.resx">
+      <DependentUpon>FormMonitoring_dan_laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksi, Menu, Promo.resx">
+      <DependentUpon>FormTransaksi, Menu, Promo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pppi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piz.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakemyday.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Jun 22, 2025, 09_37_05 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bake_my_day_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakemyday-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT_Image_Jun_24__2025__10_44_15_PM-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_pizza.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\328730.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_resized_40x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_resized_60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzaaa-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzaaa_resized_275x284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgPizza.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
